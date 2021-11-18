@@ -16,7 +16,7 @@ class PostsRepository extends ServiceEntityRepository
 {
     public function __construct(ManagerRegistry $registry)
     {
-        parent::__construct($registry, Commentaires::class);
+        parent::__construct($registry, Posts::class);
     }
 
     // /**

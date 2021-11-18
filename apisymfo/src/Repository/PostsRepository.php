@@ -7,12 +7,12 @@ use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Persistence\ManagerRegistry;
 
 /**
- * @method Commentaires|null find($id, $lockMode = null, $lockVersion = null)
- * @method Commentaires|null findOneBy(array $criteria, array $orderBy = null)
- * @method Commentaires[]    findAll()
- * @method Commentaires[]    findBy(array $criteria, array $orderBy = null, $limit = null, $offset = null)
+ * @method Posts|null find($id, $lockMode = null, $lockVersion = null)
+ * @method Posts|null findOneBy(array $criteria, array $orderBy = null)
+ * @method Posts[]    findAll()
+ * @method Posts[]    findBy(array $criteria, array $orderBy = null, $limit = null, $offset = null)
  */
-class CommentairesRepository extends ServiceEntityRepository
+class PostsRepository extends ServiceEntityRepository
 {
     public function __construct(ManagerRegistry $registry)
     {
@@ -20,7 +20,7 @@ class CommentairesRepository extends ServiceEntityRepository
     }
 
     // /**
-    //  * @return Commentaires[] Returns an array of Commentaires objects
+    //  * @return Posts[] Returns an array of Posts objects
     //  */
     /*
     public function findByExampleField($value)
@@ -37,7 +37,7 @@ class CommentairesRepository extends ServiceEntityRepository
     */
 
     /*
-    public function findOneBySomeField($value): ?Commentaires
+    public function findOneBySomeField($value): ?Posts
     {
         return $this->createQueryBuilder('c')
             ->andWhere('c.exampleField = :val')
